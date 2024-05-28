@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20240524-12-1
+      author: RevanHajiyev
+      changes:
+        - createTable:
+            tableName: notification
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: message
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: userEmail
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: userId
+                  type: UUID
+                  constraints:
+                    nullable: false
+              - column:
+                  name: orderId
+                  type: UUID
+                  constraints:
+                    nullable: false
+            remarks: Notification entity

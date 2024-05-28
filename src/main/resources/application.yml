@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: abbtech-bookstore-notification-ms
+server:
+  servlet:
+    context-path: /abbtech-bookstore-notification-ms
+  port: 8086
